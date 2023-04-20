@@ -10,6 +10,31 @@
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </head>
+
+<style>
+.notie-container {
+    box-shadow: none;
+  }
+  </style>
+  
+    <script>
+    function Agregar(){
+        notie.alert({ type: 1, text: 'Agregado', time: 2 })
+    }
+
+    function Eliminar(){
+        notie.alert({ type: 3, text: 'Eliminado', time: 2 })
+    }
+
+    function Actualizar(){
+        notie.alert({ type: 4, text: 'Actualizado', time: 2 })
+    }
+
+    function Redirijir(){
+        notie.alert({ type: 4, text: 'Redirijiendo', time: 2 })
+    }
+    </script>
+
 <body style="background-color: rgb(58, 204, 204)">
 <nav class="navbar bg-body-tertiary fixed-top" style="background-color: #0b132b">
 <div class="container-fluid">
@@ -66,5 +91,6 @@
     </div>
 </div>
 </nav>
+<script src="https://unpkg.com/notie"></script>
 </body>
 </html>

@@ -171,9 +171,9 @@
                             <td>{{ $usuario->apMaterno }}</td>
                             <td>{{ $usuario->email }}</td>
                             <td>
-                                <a href="{{ route('editusu.edit', $usuario->id) }}" method="GET" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-                                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                <a href="{{ route('usu.show', $usuario->id) }}" method="GET" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
+                                <a href="{{ route('editusu.edit', $usuario->id) }}" method="GET" class="edit" title="Edit" data-toggle="tooltip" onclick="Redirijir()"><i class="material-icons">&#xE254;</i></a>
+                                <a href="{{ route('usu.show', $usuario->id) }}" method="GET" class="delete" title="Delete" data-toggle="tooltip" onclick="Redirijir()"><i class="material-icons">&#xE872;</i></a>
                             </td>
                         </tr>
                         @endforeach

@@ -51,6 +51,6 @@
             8 a 12 caracteres, letras y números, sin espacios y sin caracteres especiales ni emoji.
         </div>
         <div class="text-center">
-            <button type="submit" name="btnaddU" class="btn btn-dark m-3" onclick="">Ingresar</button>
+            <button type="submit" name="btnaddU" class="btn btn-dark m-3" onclick="Agregar()">Agregar</button>
         </div>
 
