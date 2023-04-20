@@ -20,37 +20,38 @@
     </svg>
     <div class="container formxd">
         <div class="text-center mt-2">
-            <h2 class="fw-normal">Agregar Usuario</h2>
+            <h2 class="fw-normal">Eliminar Usuario</h2>
         </div>
         <div class="text-center m-2 mb-4">
             <svg class="bi" width="100" height="100"><use xlink:href="#prov"/></svg>
         </div>
 
-        <form method="post" action="{{ route('Nuser.store') }}">
+        <form method="post" action="{{ route('usu.destroy', $usu->id) }}">
             @csrf
+            @method('DELETE')
     <div class="form-group">
         <label class="form-label">Nombre: </label>
-        <input required type="text" class="form-control" name="nombre" placeholder="Introduce el nombre de usuario..." required>
+        <input required type="text" class="form-control" name="nombre" placeholder="Introduce el nombre de usuario..." value="{{$usu->nombre}}" required>
     </div>
     <div class="form-group">
         <label class="form-label">Apellido paterno: </label>
-        <input required type="text" class="form-control" name="apPaterno" placeholder="Introduce el Apellido paterno..." required>
+        <input required type="text" class="form-control" name="apPaterno" placeholder="Introduce el Apellido paterno..." value="{{$usu->apPaterno}}" required>
     </div>
     <div class="form-group">
         <label class="form-label">Apellido materno: </label>
-        <input required type="text" class="form-control" name="apMaterno" placeholder="Introduce el Apellido materno..." required>
+        <input required type="text" class="form-control" name="apMaterno" placeholder="Introduce el Apellido materno..." value="{{$usu->apMaterno}}" required>
     </div>
     <div class="form-group">
         <label class="form-label">Correo electronico: </label>
-        <input required type="text" class="form-control" name="email" placeholder="Introduce su correo electronico" required>
+        <input required type="text" class="form-control" name="email" placeholder="Introduce su correo electronico" value="{{$usu->email}}" required>
     </div>
     <div class="form-group">
         <label for="inputPassword5" class="form-label">Contraseña: </label>
-        <input type="password" id="inputPassword5" class="form-control" name="password" placeholder="Password..." aria-labelledby="passwordHelpBlock" required>
+        <input type="password" id="inputPassword5" class="form-control" name="password" placeholder="Password..." aria-labelledby="passwordHelpBlock" value="{{$usu->password}}" required>
         <div id="passwordHelpBlock" class="form-text">
             8 a 12 caracteres, letras y números, sin espacios y sin caracteres especiales ni emoji.
         </div>
         <div class="text-center">
-            <button type="submit" name="btnaddU" class="btn btn-dark m-3" onclick="">Ingresar</button>
+            <button type="submit" name="btnaddU" class="btn btn-dark m-3" onclick="">Eliminar</button>
         </div>
 
