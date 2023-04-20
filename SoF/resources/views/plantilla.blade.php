@@ -50,7 +50,7 @@
     <div class="offcanvas-body" style="background-color: #0b132b">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-                <a class="nav-link text-white {{ request()->routeIs('Nuser') ?'text-warning ':'' }}" aria-current="page" href="/">Usuario</a>
+                <a class="nav-link text-white {{ request()->routeIs('Nuser.create') ?'text-warning ':'' }}" aria-current="page" href="/user">Usuario</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white {{ request()->routeIs('Nmateria') ?'text-warning ':'' }}" aria-current="page" href="/materia">Materia</a>
@@ -59,25 +59,25 @@
                 <a class="nav-link text-white {{ request()->routeIs('Ngroup') ?'text-warning ':'' }}" aria-current="page" href="/group">Grupo</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white {{ request()->routeIs('Ncuatri') ?'text-warning ':'' }}" aria-current="page" href="/cuatri">Cuatrimestre</a>
+                <a class="nav-link text-white {{ request()->routeIs('Ncuatri.create') ?'text-warning ':'' }}" aria-current="page" href="/cuatri">Cuatrimestre</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white {{ request()->routeIs('Ncarrera') ?'text-warning ':'' }}" aria-current="page" href="/carrera">Carrera</a>
+                <a class="nav-link text-white {{ request()->routeIs('Ncarrera.create') ?'text-warning ':'' }}" aria-current="page" href="/carrera">Carrera</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white {{ request()->routeIs('Ncargahora') ?'text-warning ':'' }}" aria-current="page" href="/cargahora">Carga horaria</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white {{ request()->routeIs('NconsulUser') ?'text-warning ':'' }}" aria-current="page" href="/consulUser">Consultar usuarios</a>
+                <a class="nav-link text-white {{ request()->routeIs('user.index') ?'text-warning ':'' }}" aria-current="page" href="/consulUser">Consultar usuarios</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white {{ request()->routeIs('NconsulMateria') ?'text-warning ':'' }}" aria-current="page" href="/consulMateria">Consultar materias</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white {{ request()->routeIs('NconsulCuatri') ?'text-warning ':'' }}" aria-current="page" href="/consulCuatri">Consultar cuatrimestre</a>
+                <a class="nav-link text-white {{ request()->routeIs('cuatri.index') ?'text-warning ':'' }}" aria-current="page" href="/consulCuatri">Consultar cuatrimestre</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white {{ request()->routeIs('NconsulCarrera') ?'text-warning ':'' }}" aria-current="page" href="/consulCarrera">Consultar Carrera</a>
+                <a class="nav-link text-white {{ request()->routeIs('carrera.index') ?'text-warning ':'' }}" aria-current="page" href="/consulCarr">Consultar Carrera</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white {{ request()->routeIs('NconsulGroup') ?'text-warning ':'' }}" aria-current="page" href="/consulGroup">Consultar Grupos</a>

@@ -39,7 +39,7 @@ Route::delete('/eliminarcarre/{id}', [CarreraCont::class, 'destroy'])->name('car
 
 Route::get('/cuatri', [CuatriCont::class, 'create'])->name('Ncuatri.create');
 Route::post('/cuatritabla', [CuatriCont::class, 'store'])->name('Ncuatri.store');
-Route::get('/consulCarr', [CuatriCont::class, 'index'])->name('cuatri.index');
+Route::get('/consulCuatri', [CuatriCont::class, 'index'])->name('cuatri.index');
 Route::get('/editarcua/{id}', [CuatriCont::class, 'edit'])->name('editcua.edit');
 Route::put('/actualizarcua/{id}', [CuatriCont::class, 'update'])->name('editcua.update');
 Route::get('/mostrarcua/{id}', [CuatriCont::class, 'show'])->name('cuat.show');
