@@ -32,6 +32,10 @@
                         <label class="form-label">Nombre del grupo: </label>
                         <input required type="text" class="form-control" name="nameGroup" placeholder="Introduce el nombre del grupo..." required>
                     </div>
+                    <div class="form-group">
+                        <label class="form-label">Nombre de la carrera: </label>
+                        <input required type="text" class="form-control" name="nameGroup" placeholder="Introduce el nombre de la carrera..." required>
+                    </div>
                 <div class="text-center">
                     <button type="submit" name="btnsaveU" class="btn btn-dark m-3">Guardar</button>
                 </div>

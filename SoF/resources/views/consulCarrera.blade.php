@@ -152,24 +152,26 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach ($carr as $carrera)
                         <tr>
-                            <td>1</td>
-                            <td>Sistemas computacionales</td>
+                            <td>{{ $carrera->idcarrera }}</td>
+                            <td>{{ $carrera->carrera }}</td>
                             <td>
                                 <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-                                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                <a href="{{ route('editcarr.edit', $carrera->idcarrera) }}" method="GET" class="edit" title="Edit" data-toggle="tooltip" onclick="Redirijir()"><i class="material-icons">&#xE254;</i></a>
+                                <a href="{{ route('carre.show', $carrera->idcarrera) }}" method="GET" class="delete" title="Delete" data-toggle="tooltip" onclick="Redirijir()"><i class="material-icons">&#xE872;</i></a>
                             </td>
                         </tr>
+                        @endforeach
                     </tbody>
                 </table>
                 <div class="clearfix">
                     <div class="hint-text" style="color: #000066;">Showing <b>5</b> out of <b>25</b> entries</div>
                     <ul class="pagination">
                         <li class="page-item disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
-                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item active"><a href="#" class="page-link">1</a></li>
                         <li class="page-item"><a href="#" class="page-link">2</a></li>
-                        <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
                         <li class="page-item"><a href="#" class="page-link">4</a></li>
                         <li class="page-item"><a href="#" class="page-link">5</a></li>
                         <li class="page-item"><a href="#" class="page-link"><i class="fa fa-angle-double-right"></i></a></li>
