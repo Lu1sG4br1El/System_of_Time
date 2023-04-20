@@ -134,6 +134,14 @@
             <div class="table-wrapper">
                 <div class="table-title">
                     <div class="row">
+                        <div class="col-md-12">
+                            @if ($message = Session::get('success'))
+                            <div class="alert alert-success alert-block">
+                              <button type="button" class="close" data-dismiss="alert">✖️</button>
+                              <strong>{{ $message }}</strong>
+                            @endif
+                            </div>
+                          </div>
                         <div class="col-sm-8" style="color: #000066;"><h2>Carrera</h2></div>
                         <div class="col-sm-4">
                             <div class="search-box">
